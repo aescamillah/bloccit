@@ -1,4 +1,8 @@
 class PostsController < ApplicationController
+
+  # before_action :flash_attack
+  skip_before_action :flash_attack, only: [:index, :new]
+
   def index
     @posts = Post.all
   end
@@ -36,5 +40,11 @@ class PostsController < ApplicationController
       render :edit
     end
   end
+
+  # private
+
+  # def flash_attack
+    # flash[:notice] = "Flash attack on every post-related view!"  
+  # end
 
 end

@@ -1,5 +1,4 @@
 <h1><%= @post.title %></h1>
-
 <div class="row">
   <div class="col-md-8">
     <p><%= @post.body %></p>
@@ -10,3 +9,17 @@
     <% end %>
   </div>
 </div>
+
+<div class="row">
+  <% if @summary == nil %>
+    <div class="col-md-4">
+        <%= link_to "Create Summary", new_topic_post_summary_path(@topic, @post), class: 'btn btn-success' %>
+    </div>
+  <% else %>
+    <h3>Summary</h3>
+    <div class="col-md-4">
+      <p><%= @summary.body %></p>
+    </div>
+  <% end %>
+</div>
+

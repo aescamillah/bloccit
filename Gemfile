@@ -33,6 +33,8 @@ gem 'mini_magick'
 
 gem 'fog'
 
+gem 'will_paginate', '~> 3.0.5'
+
 # Use SCSS for stylesheets
 gem 'sass-rails', '~> 5.0'
 # Use Uglifier as compressor for JavaScript assets

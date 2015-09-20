@@ -8,6 +8,7 @@ class CommentsController < ApplicationController
     @comment.user = current_user
     @comment.post = @post
     # authorize @comment
+    authorize @comment
     if @comment.save
       flash[:notice] = "Comment was saved."
       redirect_to [@topic, @post]

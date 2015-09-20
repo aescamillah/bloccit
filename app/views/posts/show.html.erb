@@ -22,6 +22,8 @@
   <h2>Comments</h2>
   <div class='col-md-12'>
     <%= render @comments %> <!-- comment is passed to the partial as local variable-->
-    <%= render 'comments/form', topic: @topic, comment: @comment, post: @post %>
+    <% if policy(@comment).new? %>
+      <%= render 'comments/form', topic: @topic, comment: @comment, post: @post %>
+    <% end %>
   </div>
 </div>

@@ -3,7 +3,7 @@ require 'faker'
 # Create an admin user
 admin = User.new(
   name:     'Admin User',
-  email:    'admin@example.com',
+  email:    'escamilla.a@gmail.com',
   password: 'helloworld',
   role:     'admin'
 )

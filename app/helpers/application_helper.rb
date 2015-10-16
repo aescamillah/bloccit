@@ -14,4 +14,21 @@ module ApplicationHelper
     (redcarpet.render markdown).html_safe
   end
 
+  def up_vote_link_classes(post)
+    if current_user.voted(post) && current_user.voted(post).up_vote?
+      'voted'
+    else
+      ''
+    end
+  end
+
+
+  def down_vote_link_classes(post)
+    if current_user.voted(post) && current_user.voted(post).down_vote?
+      'voted'
+    else
+      ''
+    end
+  end
+
 end

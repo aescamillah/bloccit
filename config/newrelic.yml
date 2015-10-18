@@ -4,15 +4,15 @@
 # overhead.  For more information, visit www.newrelic.com.
 #
 # Generated October 18, 2015
-#
-# This configuration file is custom generated for Deloitte Consulting Group
+# 
+# This configuration file is custom generated for app40687509@heroku.com
 #
 # For full documentation of agent configuration options, please refer to
 # https://docs.newrelic.com/docs/agents/ruby-agent/installation-configuration/ruby-agent-configuration
 
 common: &default_settings
   # Required license key associated with your New Relic account.
-  license_key: 1f7589df0adf52ef1fa107d3a96d012b88060c55
+  license_key: 1d2c6cc02354acc81cdc7e2f6b9475aa21a19353
 
   # Your application name. Renaming here affects where data displays in New
   # Relic.  For more details, see https://docs.newrelic.com/docs/apm/new-relic-apm/maintenance/renaming-applications

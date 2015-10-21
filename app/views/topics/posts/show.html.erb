@@ -35,14 +35,9 @@
 <div class="row">
   <h2>Comments</h2>
   <div class='js-comments'>
-    <div class='col-md-12'>
-      <%= render partial: 'comments/comment', collection: @comments %>
-    </div>
+    <%= render partial: 'comments/comment', collection: @comments %>
   </div>
-    <% if policy(Comment.new).new? %>
-      <div class='new-comment'>
-        <%= render 'comments/form', topic: @topic, post: @post, comment: Comment.new %>
-      </div>
-    <% end %>
+  <div class='new-comment'>
+    <%= render 'comments/form', topic: @topic, post: @post, comment: Comment.new %>
   </div>
 </div>
